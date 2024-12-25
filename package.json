@@ -27,12 +27,12 @@
   "engines": {
     "node": ">=16"
   },
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "pnpm@9.15.1",
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "commit": "cz",
     "docs:generate": "typedoc --options typedoc.json",
-    "docs:deploy": "yarn docs:generate && gh-pages -d docs",
+    "docs:deploy": "pnpm docs:generate && gh-pages -d docs",
     "format": "prettier --write src/**/*.ts",
     "prepare": "husky install",
     "test": "jest"
